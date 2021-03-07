@@ -1,0 +1,39 @@
+{
+  "name": "samp-server-info-obtainer",
+  "version": "1.0.0",
+  "description": "🗺️ samp-server-obtainer — A simple typescript library for obtaining your samp server info.",
+  "main": "samp-server-info-obtainer.js",
+  "scripts": {
+    "compile": "npm run clean && tsc && npm run copy",
+    "copy": "copyfiles \"src/**/* --exclude=**/*.ts --up 1 ./build\"",
+    "clean": "rimraf ./build",
+    "test": "npm run compile && node ./build/main/test.js",
+    "execute": "npm run build:all && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyro95/samp-server-info-obtainer.git"
+  },
+  "author": "kyro95",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyro95/samp-server-info-obtainer/issues"
+  },
+  "homepage": "https://github.com/kyro95/samp-server-info-obtainer#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "copyfiles": "^2.4.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-functional": "^3.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "open-cli": "^6.0.1",
+    "prettier": "^2.2.1",
+    "promise-socket": "^7.0.0",
+    "rimraf": "^3.0.2",
+    "typedoc": "^0.20.29",
+    "typescript": "^4.2.3"
+  }
+}
