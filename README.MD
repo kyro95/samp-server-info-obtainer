@@ -1,10 +1,6 @@
 # samp-server-info-obtainer
 🗺️ samp-server-obtainer — A simple library made in typescript for obtaining your samp server info
 
-### Install
-```
-npm install samp-server-info-obtainer
-```
 
 ### Example
 ```typescript
