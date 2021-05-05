@@ -1,6 +1,6 @@
 {
   "name": "samp-server-info-obtainer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "🗺️ samp-server-obtainer — A simple typescript library for obtaining your samp server info.",
   "main": "samp-server-info-obtainer.js",
   "scripts": {

@@ -12,14 +12,16 @@ npm install (on root directory)
 
 import sampServer from "./path";
 
-sampServer.connect({
-    ip: "127.0.0.7",
-    port: 7777
-}, myFunction);
-
-function myFunction() {
-    console.log('Callback called!');
+async function doTest() {
+    const test = await sampServer.retriveInfo({
+        ip: "",
+        port: 7777
+    }, "i");
+    
+    console.log(test);
 }
 
-// Prints out: 'Callback called'
+doTest();
+
+// Prints out an object which contains the samp server info submitted.
 ```
