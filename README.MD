@@ -10,10 +10,11 @@ npm install (on root directory)
 ### Example
 ```typescript
 
-import sampServer from "./path";
+import sampRetriever from "./path";
+import { ISampData } from "./path";
 
 async function doTest() {
-    const test = await sampServer.retriveInfo({
+    const test: ISampData = await sampRetriever.fetch({
         ip: "",
         port: 7777
     }, "i");
